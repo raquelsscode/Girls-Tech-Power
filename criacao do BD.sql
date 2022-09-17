@@ -59,27 +59,25 @@ SELECT * FROM estado ORDER BY estado_nome;
 CREATE TABLE cidade
 (cidade_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
  cidade_nome VARCHAR(100) NOT NULL,
- pais_id INTEGER NOT NULL, 
  estado_id  INTEGER NOT NULL, 
- FOREIGN KEY (pais_id) REFERENCES pais (pais_id),
  FOREIGN KEY (estado_id) REFERENCES estado (estado_id));
 
 /* ==========================================       insersão de cidades */
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 33, 'Rio de Janeiro');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 41,	'Curitiba');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 33,	'Arraial do Cabo');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 24,	'Natal');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 35,	'Campos do Jordão');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 31,	'Belo Horizonte');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 33,	'Angra dos Reis');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 23,	'Fortaleza');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 43,	'Gramado');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 26,	'Porto de Galinhas');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 26,	'Muro Alto');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 26,	'Maracaípe');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 35,	'Ribeirão Preto');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 35,	'Catanduva');
-INSERT INTO cidade (pais_id, estado_id, cidade_nome) VALUES (1, 35,	'Ourinhos');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (33, 'Rio de Janeiro');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (41,	'Curitiba');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (33,	'Arraial do Cabo');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (24,	'Natal');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (35,	'Campos do Jordão');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (31,	'Belo Horizonte');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (33,	'Angra dos Reis');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (23,	'Fortaleza');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (43,	'Gramado');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (26,	'Porto de Galinhas');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (26,	'Muro Alto');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (26,	'Maracaípe');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (35,	'Ribeirão Preto');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (35,	'Catanduva');
+INSERT INTO cidade (estado_id, cidade_nome) VALUES (35,	'Ourinhos');
 
 /* ==========================================       consulta cidade - uf */
 SELECT estado_sigla, cidade_id, cidade_nome  
@@ -91,10 +89,10 @@ ORDER BY estado_sigla, cidade_nome;
 /* ==========================================       criação da tabela de clientes */
 CREATE TABLE cliente
 (cliente_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
- cliente_nome VARCHAR(100) NULL UNIQUE,
+ cliente_nome VARCHAR(100) NULL NOT NULL,
  cliente_data_nascimento DATE NOT NULL,
- cliente_cpf VARCHAR(14) NULL,
- cliente_rg VARCHAR(15) NULL,
+ cliente_cpf VARCHAR(14) NOT NULL UNIQUE,
+ cliente_rg VARCHAR(15)  NOT NULL,
  cliente_endereco VARCHAR(100) NULL, 
  cliente_numero VARCHAR(10) NULL,
  cliente_complemento VARCHAR(50) NULL,
