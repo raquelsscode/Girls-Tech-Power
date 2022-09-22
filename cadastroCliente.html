@@ -1,89 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8" />
-    <title>Tela de Cadastro</title>
-    <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="css/menu.css">
-</head>
-    <body>
-        <header>
-            <div class="left">
-                <h3>Menu</h3>
-            </div>
-            <div class="center">
-                <h3>Cadastro de Cliente</h3>
-            </div>
-            <div class="right">
-                <a href="#" class="sair_icon"><ion-icon name="log-out-outline"></ion-icon></a>
-            </div>
-        </header>
-        <div class="sidebar">
-            <a href="#"><ion-icon name="person-circle-outline"></ion-icon><span>Cadastro de Cliente</span></a>
-            <a href="#"><ion-icon name="airplane-outline"></ion-icon><span>Registro de Viagem</span></a>
-            <a href="#"><ion-icon name="document-text-outline"></ion-icon><span>Relatório </span></a>
-            </div>
-        <div class="container_form">
-            <form class="form" action="#" method="post">
-                
-                <div class="form_grupo">
-                    <label for="nome" class="form_label">Nome:</label>
-                    <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
-                </div>
-                <div class="form_grupo">
-                    <label for="nome" class="form_label">Sobrenome:</label>
-                    <input type="text" name="sobrenome" class="form_input" id="sobrenome" placeholder="Sobrenome" required>
-                </div>
-                
-                <div class="form_grupo">
-                    <label for="datanascimento" class="form_label">Data de Nascimento:</label>
-                    <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
-                </div>     
-                <div class="form_grupo">
-                    <label for="e-mail" class="form_label">Email:</label>
-                    <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
-                </div>
+<html lang="pt" dir="ltr">
+   <head>
+    
+      <meta charset="utf-8">
+      <title>Cravo & Canela</title>
+      <link rel="stylesheet" href="css/cadastro.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
 
-                <div class="form_grupo">
-                    <label for="cpf" class="form_label">CPF:</label>
-                    <input type="text" name="cpf" class="form_input" id="cpf" placeholder="CPF"  required>
-                </div>
-                <div class="form_grupo">
-                    <label for="rg" class="form_label">RG:</label>
-                    <input type="text" name="rg" class="form_input" id="rg" placeholder="RG" required>
-                </div>
-                <div class="form_grupo">
-                    <label for="endereco" class="form_label">Endereço:</label>
-                    <input type="text" name="endereco" class="form_input" id="endereco" placeholder="Endereço" required>
-                </div>
-                <div class="form_grupo">
-                    <label for="numeroCasa" class="form_label">Numero:</label>
-                    <input type="text" name="numeroCasa" class="form_input" id="numeroCasa" placeholder="Numero" required>
-                </div>
-                <div class="form_grupo">
-                    <label for="complemento" class="form_label">Complemento:</label>
-                    <input type="text" name="complemento" class="form_input" id="complemento" placeholder="Complemento">
-                </div>
-                <div class="form_grupo">
-                    <label for="bairro" class="form_label">Bairro:</label>
-                    <input type="text" name="bairro" class="form_input" id="bairro" placeholder="Bairro" required>
-                </div>
-                <div class="form_grupo">
-                    <label for="cep" class="form_label">CEP:</label>
-                    <input type="text" name="cep" class="form_input" id="cep" placeholder="CEP" required>
-                </div>
-                <div class="form_grupo">
-                    <label for="telefone" class="form_label">Telefone:</label>
-                    <input type="text" name="telefone" class="form_input" id="telefone" placeholder="Telefone" required>
-                </div>
-                    <div class="submit">
-                      <input type="hidden" name="acao" value="enviar">
-                      <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
-                    
-                    </div>
-            </form>
-    </div><!--container_form-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            Cravo & Canela
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="#">Home</a></li>
+            <li><a class="active" href="#">Cadastro Cliente</a></li>
+            <li><a href="#">Registro de Viagem</a></li>
+            <li><a href="#">Relatorio</a></li>
+            <li><a  href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
+         </ul>
+      </nav>
+
+      <div class="container">
+        <button href="Cliente.html" class="btn"><i class="fa fa-chevron-left"></i></button>
+        <div class="title">Cadastro de Cliente</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Nome</span>
+                <input type="text" placeholder="Digite o primeiro nome" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Sobrenome</span>
+                <input type="text" placeholder="Digite o ultimo nome" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Digite o e-mail" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Data de Nascimento</span>
+                <input type="date" placeholder="Digite a data de nascimento" required>
+              </div>
+              <div class="input-box">
+                <span class="details">CPF</span>
+                <input type="text" placeholder="Digite o CPF" required>
+              </div>
+              <div class="input-box">
+                <span class="details">RG</span>
+                <input type="text" placeholder="Digite o RG" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Endereço</span>
+                <input type="text" placeholder="Digite o endereço" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Numero</span>
+                <input type="text" placeholder="Digite o numero" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Complemento</span>
+                <input type="text" placeholder="Digite o complemento" >
+              </div>
+              <div class="input-box">
+                <span class="details">Bairro</span>
+                <input type="text" placeholder="Digite o Bairro" required>
+              </div>
+              <div class="input-box">
+                <span class="details">CEP</span>
+                <input type="text" placeholder="Digite o CEP" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Telefone</span>
+                <input type="text" placeholder="Digite o Telefone" required>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Cadastrar">
+              
+            </div>
+           
+          </form>
+        </div>
+      </div>
+    
+</body>
 </html>
