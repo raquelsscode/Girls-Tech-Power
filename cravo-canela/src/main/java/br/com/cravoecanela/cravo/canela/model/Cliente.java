@@ -46,7 +46,8 @@ public class Cliente {
 	@JoinColumn(name = "cidade_id")
 	//@JsonIgnoreProperties("listaClientes")
 	private Cidade cidade;
-
+	
+	
 	public Integer getClienteId() {
 		return clienteId;
 	}
