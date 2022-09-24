@@ -115,10 +115,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/elizapimentel/projeto-final-women-in-cloud.git>
+$ git clone git@github.com:raquelsscode/Girls-Tech-Power.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd projeto-final-women-in-cloud
+$ cd Girls-Tech-Power
 ```
 
 ---
