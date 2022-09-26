@@ -57,8 +57,12 @@ public class ClienteHospedagemController {
 		if(res != null) {
 			return ResponseEntity.ok(res);
 			}
-		return ResponseEntity.badRequest().build();
-			
+		return ResponseEntity.badRequest().build();			
+	}
+	
+	@GetMapping("/clienteHospedagem?")
+	public ArrayList<ClienteHospedagem> filterByFields(){
+		return (ArrayList<ClienteHospedagem>)service.listarClienteHospedagems();
 	}
 }
 

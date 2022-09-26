@@ -49,6 +49,8 @@ public class Pais {
 
 	public void setListaEstados(List<Estado> listaEstados) {
 		this.listaEstados = listaEstados;
-	}	
+	}
+
+	
 	
 }

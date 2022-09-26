@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cravoecanela.cravo.canela.model.Cidade;
@@ -60,6 +61,12 @@ public class CidadeController {
 		return ResponseEntity.badRequest().build();
 			
 	}
+	
+//	
+//	@GetMapping("/cidade/busca")
+//	public ArrayList<Cidade> listarCidadesNome(@RequestParam(name="palavra") String palavra) {
+//		return service.listarCidadesNome(palavra) ;
+//	}
 }
 
 

@@ -43,6 +43,12 @@ public class CidadeServiceImp implements ICidadeService{
 		
 	}
 	
+	@Override
+	public ArrayList<Cidade> listarCidadesNome(String palavra) {
+		return dao.findBycidadeNomeContaining(palavra);
+		
+	}
+	
 	
 }
 

@@ -9,5 +9,6 @@ public interface ICidadeService {
 	public ArrayList<Cidade> listarCidades();
 	public Cidade cidadePorId(Integer id);
 	public void deletarCidade(Integer id);
+	public ArrayList<Cidade> listarCidadesNome(String palavra);
 
 }

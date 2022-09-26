@@ -5,5 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import br.com.cravoecanela.cravo.canela.model.Estado;
 
 public interface EstadoDao extends CrudRepository<Estado,Integer>{
+	public Estado findFirstByestadoSigla(String sigla);
 
 }

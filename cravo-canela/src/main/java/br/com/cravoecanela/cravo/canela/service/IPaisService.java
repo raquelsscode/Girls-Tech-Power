@@ -9,6 +9,7 @@ public interface IPaisService {
 	public ArrayList<Pais> listarPaises();
 	public Pais paisPorId(Integer id);
 	public void deletarPais(Integer id);
+	public Pais paisPorNome(String palavra);
 
 }
 

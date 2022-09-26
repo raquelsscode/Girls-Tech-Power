@@ -60,6 +60,16 @@ public class EstadoController {
 		return ResponseEntity.badRequest().build();
 			
 	}
+	
+	@GetMapping("/estado/{sigla}")
+	public ResponseEntity<Estado> getEstadoById(@PathVariable String sigla){
+		Estado res = service.estadoPorSigla(sigla);
+		if(res != null) {
+			return ResponseEntity.ok(res);
+			}
+		return ResponseEntity.badRequest().build();
+			
+	}
 }
 
 

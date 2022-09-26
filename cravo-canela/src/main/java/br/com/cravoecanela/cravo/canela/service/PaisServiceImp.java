@@ -15,10 +15,10 @@ public class PaisServiceImp implements IPaisService{
 
 	@Override
 	public Pais criarPais(Pais novo) {
-		if(novo.getPaisNome() != null) {
+		if(novo.getPaisNome() != null && paisPorNome(novo.getPaisNome())==null)  {
 			return dao.save(novo);
 		}
-		return null;
+		return paisPorNome(novo.getPaisNome());
 	}
 
 	@Override
@@ -39,10 +39,17 @@ public class PaisServiceImp implements IPaisService{
 	public Pais paisPorId(Integer id) {
 		return dao.findById(id).orElse(null);
 	}
-
+	
+	
 	@Override
 	public void deletarPais(Integer id) {
 		dao.deleteById(id);
+		
+	}
+
+	@Override
+	public Pais paisPorNome(String nome) {
+		return dao.findFirstByNome(nome);
 		
 	}
 	

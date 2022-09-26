@@ -43,6 +43,11 @@ public class EstadoServiceImp implements IEstadoService{
 		dao.deleteById(id);
 		
 	}
+
+	@Override
+	public Estado estadoPorSigla(String sigla) {
+		return dao.findFirstByEstado_Sigla(sigla);		
+	}
 	
 	
 }
