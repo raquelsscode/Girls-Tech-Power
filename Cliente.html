@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <title>Cravo & Canela</title>
       <link rel="stylesheet" href="css/cliente.css">
+      <link rel="stylesheet" href="css/header.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
@@ -14,28 +15,34 @@
 
    </head>
    <body>
-      <nav>
-         <div class="logo">
-            Cravo & Canela
+      <header class="container__header">
+         <div>
+             <img class="container-logo" src="imagens/cravo-e-canela-invertido.png" alt="Logo Cravo & Canela">
          </div>
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-         <i class="fas fa-bars"></i>
-         </label>
-         <ul>
-            <li><a  href="home.html">Home</a></li>
-            <li><a class="active" href="cadastroCliente.html">Cadastro Cliente</a></li>
-            <li><a href="#">Registro de Viagem</a></li>
-            <li><a href="#">Relatório</a></li>
-            <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
-         </ul>
-      </nav>
+ 
+         <nav>
+             <input type="checkbox" id="click">
+             
+             <label for="click" class="menu-btn">
+                 <i class="fas fa-bars"></i>
+             </label>
+ 
+             <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a class="active"  href="cadastroCliente.html">Cadastro Cliente</a></li>
+                 <li><a href="registroViagens.html">Registro de Viagens</a></li>
+                 <li><a href="relatorio.html">Relatório</a></li>
+                 <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
+             </ul>
+         </nav>
+ 
+     </header>
    </body>
    <body>
     
     <div class="container mt-4">
       <div class=".button">
-        <button href=cadastroCliente.htmls class="button">Novo Cliente</button>
+        <button href="cadastroCliente.html" class="button">Novo Cliente</button>
      </div>
     <table  class="table table-striped" style="width:100%">
       <thead>
@@ -46,11 +53,11 @@
             <th>Data da Nascimento</th>
             <th>CPF</th>
             <th>RG</th>
+            <th>CEP</th>
             <th>Endereço</th>
             <th>Numero</th>
             <th>Complemento</th>
             <th>Bairro</th>
-            <th>CEP</th>
             <th>Telefone</th>
         </tr>
     </thead>
@@ -62,11 +69,11 @@
             <td>24/06/1972</td>
             <td>234.494.349-13</td>
             <td>45.234.234-2</td>
+            <td>17902-048</td>
             <td>Alameda dos pinhais</td>
             <td>65</td>
             <td>Casa</td>
             <td>Jardim dos Pinhas</td>
-            <td>17902-048</td>
             <td>(17)98845-4960</td>
         </tr>
       </tbody>

@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <title>Cravo & Canela</title>
       <link rel="stylesheet" href="css/cadastro.css">
+      <link rel="stylesheet" href="css/header.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
@@ -14,22 +15,29 @@
 
    </head>
    <body>
-      <nav>
-         <div class="logo">
-            Cravo & Canela
-         </div>
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-         <i class="fas fa-bars"></i>
-         </label>
-         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a class="active" href="cadastroCliente.html">Cadastro Cliente</a></li>
-            <li><a href="#">Registro de Viagem</a></li>
-            <li><a href="#">Relatorio</a></li>
-            <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
-         </ul>
-      </nav>
+
+    <header class="container__header">
+        <div>
+            <img class="container-logo" src="imagens/cravo-e-canela-invertido.png" alt="Logo Cravo & Canela">
+        </div>
+
+        <nav>
+            <input type="checkbox" id="click">
+            
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a  class="active" href="cadastroCliente.html">Cadastro Cliente</a></li>
+                <li><a href="registroViagens.html">Registro de Viagens</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+                <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+
+    </header>
 
       <div class="container">
         <button href="Cliente.html" class="btn"><i class="fa fa-chevron-left"></i></button>
@@ -62,6 +70,10 @@
                 <input type="text" placeholder="Digite o RG" required>
               </div>
               <div class="input-box">
+                <span class="details">CEP</span>
+                <input type="text" placeholder="Digite o CEP" required>
+              </div>
+              <div class="input-box">
                 <span class="details">Endereço</span>
                 <input type="text" placeholder="Digite o endereço" required>
               </div>
@@ -76,10 +88,6 @@
               <div class="input-box">
                 <span class="details">Bairro</span>
                 <input type="text" placeholder="Digite o Bairro" required>
-              </div>
-              <div class="input-box">
-                <span class="details">CEP</span>
-                <input type="text" placeholder="Digite o CEP" required>
               </div>
               <div class="input-box">
                 <span class="details">Telefone</span>
