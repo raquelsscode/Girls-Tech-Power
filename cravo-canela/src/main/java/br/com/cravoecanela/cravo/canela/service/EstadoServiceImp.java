@@ -46,7 +46,7 @@ public class EstadoServiceImp implements IEstadoService{
 
 	@Override
 	public Estado estadoPorSigla(String sigla) {
-		return dao.findFirstByEstado_Sigla(sigla);		
+		return dao.findFirstByestadoSigla(sigla);		
 	}
 	
 	

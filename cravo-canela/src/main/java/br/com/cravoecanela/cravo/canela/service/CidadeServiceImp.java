@@ -15,7 +15,9 @@ public class CidadeServiceImp implements ICidadeService{
 
 	@Override
 	public Cidade criarCidade(Cidade novo) {
-		return dao.save(novo);		
+		if(listarCidadesNome(novo.getCidadeNome()) == null)
+			return dao.save(novo);	
+		return listarCidadesNome(novo.getCidadeNome());
 	}
 
 	@Override
@@ -44,8 +46,8 @@ public class CidadeServiceImp implements ICidadeService{
 	}
 	
 	@Override
-	public ArrayList<Cidade> listarCidadesNome(String palavra) {
-		return dao.findBycidadeNomeContaining(palavra);
+	public Cidade listarCidadesNome(String cidade) {
+		return dao.findFirstBycidadeNome(cidade);
 		
 	}
 	

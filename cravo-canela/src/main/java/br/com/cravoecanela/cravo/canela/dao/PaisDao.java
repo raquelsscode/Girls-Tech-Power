@@ -7,5 +7,5 @@ import br.com.cravoecanela.cravo.canela.model.Pais;
 
 public interface PaisDao extends CrudRepository<Pais,Integer>{
 	
-	public Pais findFirstByNome(String palavra);
+	public Pais findFirstBypaisNome(String palavra);
 }

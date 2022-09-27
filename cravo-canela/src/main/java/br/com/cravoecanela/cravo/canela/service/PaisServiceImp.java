@@ -49,7 +49,7 @@ public class PaisServiceImp implements IPaisService{
 
 	@Override
 	public Pais paisPorNome(String nome) {
-		return dao.findFirstByNome(nome);
+		return dao.findFirstBypaisNome(nome);
 		
 	}
 	
