@@ -21,13 +21,13 @@
                     <form class="form">
                         <label class="label-input" for="">
                             <i class="fas fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="E-mail">
+                            <input type="email" id="emaillogin" placeholder="E-mail" required>
                         </label>
                         <label class="label-input" for="">
                             <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha">
+                            <input type="password" id="password"placeholder="Senha" required>
                         </label>                     
-                        <button href="home.html" class="btn btn-second" >Entrar</button>
+                        <button href="home.html" class="btn btn-second" onclick="validarAcesso()">Entrar</button>
                     </form>
             </div><!-- second column-->
         </div><!-- first column-->
