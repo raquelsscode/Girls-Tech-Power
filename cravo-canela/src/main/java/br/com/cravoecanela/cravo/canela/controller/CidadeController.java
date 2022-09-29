@@ -51,9 +51,9 @@ public class CidadeController {
 			
 	}
 	
-	@GetMapping("/cidade/{id}")
-	public ResponseEntity<Cidade> getCidadeById(@PathVariable Integer id){
-		Cidade res = service.cidadePorId(id);
+	@GetMapping("/cidade/{nome}")
+	public ResponseEntity<Cidade> getCidadeById(@PathVariable String nome){
+		Cidade res = service.listarCidadesNome(nome);
 		if(res != null) {
 			return ResponseEntity.ok(res);
 			}
