@@ -34,9 +34,9 @@ O layout da aplicação está disponível no Figma:
 
 ## Stack utilizada 🛠
 
-**Front-end:** CSS, HTML, JavaScript
+**Front-end:**     [![My Skills](https://skills.thijs.gg/icons?i=css,html,javascript,figma&theme=light)](https://skills.thijs.gg)
 
-**Back-end:** Java, SpringBoot, AWS
+**Back-end:**      [![My Skills](https://skills.thijs.gg/icons?i=java,spring,aws&theme=light)](https://skills.thijs.gg)
 
 ---
 
