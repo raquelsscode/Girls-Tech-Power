@@ -30,6 +30,7 @@ const headers = {
 //API CEP
 //
 function consultarCep() {
+    debugger;
     const Icpf = document.getElementById("cep").value.replace(/\D/g, '');
     var url = 'https://viacep.com.br/ws/' + Icpf + '/json/';
     
@@ -62,7 +63,8 @@ function consultarCep() {
 //
 //CADASTRO DE CLIENTES
 //
-formulario.addEventListener('submit', function(event){     
+formulario.addEventListener('submit', function(event){   
+    debugger;  
     cadastrarCliente();
     formulario.reset();
 
@@ -148,6 +150,12 @@ function buscarCidade(){
         IcidadeId.value = data.cidadeId;
         
     }
+
+    function exibeAlert(msg){
+        alert(msg);
+    }
+
+    
     
 }
 

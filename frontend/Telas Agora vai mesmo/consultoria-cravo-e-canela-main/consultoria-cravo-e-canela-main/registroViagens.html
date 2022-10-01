@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Cravo & Canela</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/registro.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+        <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </head>
+
+    <body>
+
+        <header class="container__header">
+            <div>
+                <img class="container-logo" src="imagens/cravo-e-canela-invertido.png" alt="Logo Cravo & Canela">
+            </div>
+
+            <nav>
+                <input type="checkbox" id="click">
+                
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="cadastroCliente.html">Cadastro de Cliente</a></li>
+                    <li><a class="active" href="registroViagens.html">Registro de Viagens</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                    <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="container-registro">
+                
+            <div class="container-form">
+                   
+                <div class="title">Registro de Viagens</div>
+
+                <div class="content">
+                    <form action="#">
+                        <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">CPF</span>
+                            <input type="text" placeholder="Digite o CPF" required>
+                        </div>
+                                
+                        <div class="input-box">
+                            <span class="details">Nome</span>
+                            <input type="text" placeholder="Digite o nome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">E-mail</span>
+                            <input type="text" placeholder="Digite o e-mail" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Cidade</span>
+                            <input type="text" placeholder="Digite a cidade" required>
+                        </div>
+                            
+                        <div class="input-box">
+                            <span class="details">Tipo de Hospedagem</span>
+                            <input type="text" placeholder="Digite o tipo de hospedagem" required>
+                        </div>
+                            
+                        <div class="input-box">
+                            <span class="details">Hospedagem</span>
+                            <input type="text" placeholder="Digite a hospedagem" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Data de Entrada</span>
+                            <input type="date" placeholder="Selecione a data" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Data de Saída</span>
+                            <input type="date" placeholder="Selecione a data" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Quantidade de Adultos</span>
+                            <input type="text" placeholder="Digite a quantidade de adultos" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Quantidade de Crianças</span>
+                            <input type="text" placeholder="Digite a quantidade de crianças" required>
+                        </div>
+
+                        <div class="button">
+                            <input claas="button" type="submit" value="Incluir">
+                        </div>
+
+                        <div class="button">
+                            <input class="button" type="submit" value="Limpar">
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div> 
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
