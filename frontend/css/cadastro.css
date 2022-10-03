@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Glory', sans-serif;
 } 
-nav{
+/* nav{
   display: flex;
   height: 80px;
   width: 100%;
@@ -51,7 +51,7 @@ nav .menu-btn i{
   font-size: 22px;
   cursor: pointer;
   display: none;
-}
+} */
 input[type="checkbox"]{
   display: none;
 }

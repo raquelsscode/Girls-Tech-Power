@@ -6,6 +6,7 @@
     padding: 0 20px 0 100px;
     height: 80px;
     overflow-x: hidden;
+    height: calc(100% - 80px);
   }
   
   .container-logo{
